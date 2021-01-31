@@ -1,9 +1,10 @@
+import Logo from '../misc/react.svg';
 const Navbar = () => {
     return (
-      <nav className="navbar navbar-expand-md navbar-light bg-light">
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark">
         <div className="container">
           <a className="navbar-brand" href="#">
-            React Blog
+            <img src={Logo} alt="React Blog" width="45px" />
           </a>
           <button
             className="navbar-toggler d-lg-none"

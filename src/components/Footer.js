@@ -23,7 +23,7 @@ const Footer = () => {
               <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
               <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
             </svg>
-            <small className="d-block mb-3 text-muted">&copy; 2017-2018</small>
+            <small className="d-block mb-3 text-muted">&copy; 2021</small>
           </div>
           <div className="col-6 col-md">
             <h5>Features</h5>

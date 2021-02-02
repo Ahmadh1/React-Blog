@@ -1,4 +1,10 @@
 const Home = () => {
+  const handleShare = () => {
+    console.log("Shared successfully!");
+  }
+  const handlePrint = (name) => {
+    console.log('Hey!' + name);
+  }
     return (
       <div className="card mt-5">
         <div className="card-header bg-dark">
@@ -11,6 +17,18 @@ const Home = () => {
             accusantium rem impedit cumque quos et, tenetur eum quaerat
             obcaecati consequuntur tempora.
           </p>
+          <button className="btn btn-dark" onClick={handleShare}>
+            Share &rarr;
+          </button>
+          {/* Anonymous function */}
+          <button
+            className="btn btn-primary float-right"
+            onClick={() => {
+              handlePrint('Ahmad')
+            }}
+          >
+            Print
+          </button>
         </div>
         <div className="card-footer">
           <p className="float-left">

@@ -1,35 +1,49 @@
 import { useState } from 'react';
 const Home = () => {
-  const [greet, setGreet] = useState("Hey ✋");
-  const handleGreeting = () => {
-    setGreet("Peace out ✌️");
-  }
+  const [posts, setPosts] = useState([
+    {
+      id: 1,
+      title: "Welcome to React ✌️",
+      body:
+        "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+      author: "Ahmad",
+    },
+    {
+      id: 2,
+      title: "Is Vue Better than React 🤔",
+      body:
+        "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+      author: "Talha",
+    },
+    {
+      id: 3,
+      title: "Is Vue-Native Better or React-Native 🥴",
+      body:
+        "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+      author: "Noor",
+    },
+    {
+      id: 4,
+      title: "Is Flutter Better or React-Native 🥴",
+      body:
+        "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+      author: "Noor",
+    },
+  ]);
     return (
-      <div className="card mt-5">
-        <div className="card-header bg-dark">
-          <h3 className="text-light">Welcome to React!</h3>
-        </div>
-        <div className="card-body">
-          <h4 className="text-center">{greet}</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
-            voluptas esse vel minus cupiditate earum culpa quam inventore
-            accusantium rem impedit cumque quos et, tenetur eum quaerat
-            obcaecati consequuntur tempora.
-          </p>
-
-          <button className="btn btn-dark" onClick={handleGreeting}>
-            Click me
-          </button>
-        </div>
-        <div className="card-footer">
-          <p className="float-left">
-            Reposted <b>12</b>
-          </p>
-          <p className="float-right">
-            Replies <b>16</b>
-          </p>
-        </div>
+      <div>
+        {posts.map((post) => (
+          <div className="card mt-5 text-white bg-dark" key={post.id}>
+            <div className="card-header">
+              Written by: <b>{post.author}</b>
+            </div>
+            <div className="card-body">
+              <h4 className="card-title">{post.title}</h4>
+              <div className="dropdown-divider"></div>
+              <p>{post.body}</p>
+            </div>
+          </div>
+        ))}
       </div>
     );
 }

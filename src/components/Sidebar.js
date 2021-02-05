@@ -1,7 +1,7 @@
 const Sidebar = () => {
     return (
         <div className="card mt-5">
-            <div className="card-header">Categories</div>
+            <div className="card-header bg-dark text-white">Categories</div>
             <div className="card-body">
                 <ul class="list-group">
                     <li class="list-group-item">React</li>

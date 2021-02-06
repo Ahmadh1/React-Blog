@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PostList from './Post/PostList';
 const Home = () => {
   const [posts, setPosts] = useState([
     {
@@ -24,7 +25,7 @@ const Home = () => {
     },
     {
       id: 4,
-      title: "Is Flutter Better or React-Native 🥴",
+      title: "Is Flutter Better or React-Native 😕",
       body:
         "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
       author: "Noor",
@@ -32,18 +33,7 @@ const Home = () => {
   ]);
     return (
       <div>
-        {posts.map((post) => (
-          <div className="card mt-5 text-white bg-dark" key={post.id}>
-            <div className="card-header">
-              Written by: <b>{post.author}</b>
-            </div>
-            <div className="card-body">
-              <h4 className="card-title">{post.title}</h4>
-              <div className="dropdown-divider"></div>
-              <p>{post.body}</p>
-            </div>
-          </div>
-        ))}
+        <PostList posts={posts} title="All Posts🤙" />
       </div>
     );
 }

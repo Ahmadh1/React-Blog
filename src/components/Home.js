@@ -31,9 +31,17 @@ const Home = () => {
       author: "Noor",
     },
   ]);
+  const handleDelete = (id) => {
+    const newPosts = posts.filter(post => post.id !== id);
+    setPosts(newPosts);
+  };
     return (
       <div>
-        <PostList posts={posts} title="All Posts🤙" />
+        <PostList
+          posts={posts}
+          title="All Posts🤙"
+          handleDelete={handleDelete}
+        />
       </div>
     );
 }

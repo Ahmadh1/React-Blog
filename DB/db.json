@@ -1,0 +1,32 @@
+{
+    "posts":[
+        {
+            "id": 1,
+            "title": "Welcome to React ✌️",
+            "body":
+                "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+            "author": "Ahmad"
+        },
+        {
+            "id": 2,
+            "title": "Is Vue Better than React 🤔",
+            "body":
+            "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+            "author": "Talha"
+        },
+        {
+            "id": 3,
+            "title": "Is Vue-Native Better or React-Native 🥴",
+            "body":
+            "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+            "author": "Noor"
+        },
+        {
+            "id": 4,
+            "title": "Is Flutter Better or React-Native 😕",
+            "body":
+                "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+            "author": "Noor"
+        }
+    ]
+}

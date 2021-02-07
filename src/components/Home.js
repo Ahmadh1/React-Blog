@@ -1,47 +1,28 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PostList from './Post/PostList';
 const Home = () => {
-  const [posts, setPosts] = useState([
-    {
-      id: 1,
-      title: "Welcome to React ✌️",
-      body:
-        "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
-      author: "Ahmad",
-    },
-    {
-      id: 2,
-      title: "Is Vue Better than React 🤔",
-      body:
-        "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
-      author: "Talha",
-    },
-    {
-      id: 3,
-      title: "Is Vue-Native Better or React-Native 🥴",
-      body:
-        "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
-      author: "Noor",
-    },
-    {
-      id: 4,
-      title: "Is Flutter Better or React-Native 😕",
-      body:
-        "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
-      author: "Noor",
-    },
-  ]);
-  const handleDelete = (id) => {
-    const newPosts = posts.filter(post => post.id !== id);
-    setPosts(newPosts);
-  };
+  const [posts, setPosts] = useState(null);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() =>{
+      fetch(`http://localhost:8000/posts`)
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          setPosts(data);
+          setLoading(false);
+        });
+    }, 2000);
+  }, []);
     return (
       <div>
-        <PostList
-          posts={posts}
-          title="All Posts🤙"
-          handleDelete={handleDelete}
-        />
+        {loading && (
+          <div className="mt-5 text-center">
+            <h3>Please Wait 🥱</h3>
+          </div>
+        )}
+        {posts && <PostList posts={posts} title="All Posts🤙" />}
       </div>
     );
 }

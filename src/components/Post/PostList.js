@@ -9,7 +9,7 @@ const PostList = ({posts, title}) => {
                     Author: <b>{post.author}</b>
                 </p>
             </div>
-            <div className="card-body text-white bg-dark">
+            <div className="card-body">
               <h4 className="card-title">{post.title}</h4>
               <div className="dropdown-divider"></div>
               <p>{post.body}</p>

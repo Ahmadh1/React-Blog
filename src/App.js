@@ -1,23 +1,24 @@
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Sidebar from './components/Sidebar';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-8">
-            <Home />
-          </div>
-          <div className="col-4">
-            <Sidebar />
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="container">
+          <div className="row">
+            <switch>
+              <Route path="/">
+                <Home />
+              </Route>
+            </switch>
           </div>
           <Footer />
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

@@ -1,32 +1,58 @@
 {
-    "posts":[
-        {
-            "id": 1,
-            "title": "Welcome to React ✌️",
-            "body":
-                "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
-            "author": "Ahmad"
-        },
-        {
-            "id": 2,
-            "title": "Is Vue Better than React 🤔",
-            "body":
-            "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
-            "author": "Talha"
-        },
-        {
-            "id": 3,
-            "title": "Is Vue-Native Better or React-Native 🥴",
-            "body":
-            "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
-            "author": "Noor"
-        },
-        {
-            "id": 4,
-            "title": "Is Flutter Better or React-Native 😕",
-            "body":
-                "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
-            "author": "Noor"
-        }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "Welcome to React ✌️",
+      "body": "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+      "author": "Ahmad"
+    },
+    {
+      "id": 2,
+      "title": "Is Vue Better than React 🤔",
+      "body": "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+      "author": "Talha"
+    },
+    {
+      "id": 3,
+      "title": "Is Vue-Native Better or React-Native 🥴",
+      "body": "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+      "author": "Noor"
+    },
+    {
+      "id": 4,
+      "title": "Is Flutter Better or React-Native 😕",
+      "body": "Quickly integrate installed base products vis-a-vis client-based channels. Credibly administrate multidisciplinary methods of empowerment for high-quality meta-services. ",
+      "author": "Noor"
+    },
+    {
+      "title": "Learning React is a headache",
+      "body": "Phew...! React is something....",
+      "author": "Talha",
+      "id": 5
+    },
+    {
+      "title": "",
+      "body": "",
+      "author": "Ahmad",
+      "id": 6
+    },
+    {
+      "title": "How can I use Framework7 with React?",
+      "body": "How can I create a Native Mobile App with Framework7 using React? Anybody, please reach out, Thanks.",
+      "author": "Noor",
+      "id": 7
+    },
+    {
+      "title": "Element UI 😇",
+      "body": "Need someone to work with me on Element UI with React....",
+      "author": "Ahmad",
+      "id": 8
+    },
+    {
+      "title": "Element UI vs React-Bootstrap",
+      "body": "Can anyone please explain which one is better for Big scale Application....",
+      "author": "Noor",
+      "id": 9
+    }
+  ]
 }

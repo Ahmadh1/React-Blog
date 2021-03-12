@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import Logo from '../misc/react.svg';
 const Navbar = () => {
     return (
       <nav className="navbar navbar-expand-md navbar-dark bg-dark">
         <div className="container">
-          <a className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <img src={Logo} alt="React Blog" width="45px" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler d-lg-none"
             type="button"
@@ -19,15 +20,15 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li className="nav-item active">
-                <a className="nav-link">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
                   Home <span className="sr-only">(current)</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link">
-                  About
-                </a>
+                <Link to="/create" className="nav-link">
+                  Add new
+                </Link>
               </li>
             </ul>
           </div>

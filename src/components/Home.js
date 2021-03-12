@@ -4,10 +4,10 @@ import PostList from "./Post/PostList";
 const Home = () => {
   const { data: posts, error, loading } = useFetch(`http://localhost:8000/posts`);
   return (
-    <div className="col-8">
+    <div>
       {loading && (
         <div className="mt-5 text-center">
-          <h3>Please Wait 🥱</h3>
+          <p>Please Wait 🥱</p>
         </div>
       )}
       {error && (
@@ -15,7 +15,7 @@ const Home = () => {
           <strong>{error}</strong>
         </div>
       )}
-      {posts && <PostList posts={posts} title="All Posts🤙" />}
+      {posts && <PostList posts={posts} title="All Posts" />}
       {/* <Counter /> */}
     </div>
   );

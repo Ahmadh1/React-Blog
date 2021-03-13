@@ -31,12 +31,6 @@
       "id": 5
     },
     {
-      "title": "",
-      "body": "",
-      "author": "Ahmad",
-      "id": 6
-    },
-    {
       "title": "How can I use Framework7 with React?",
       "body": "How can I create a Native Mobile App with Framework7 using React? Anybody, please reach out, Thanks.",
       "author": "Noor",
@@ -53,6 +47,12 @@
       "body": "Can anyone please explain which one is better for Big scale Application....",
       "author": "Noor",
       "id": 9
+    },
+    {
+      "title": "Anime React vs Material UI",
+      "body": "Which one is better for small scale applications.....",
+      "author": "Talha",
+      "id": 10
     }
   ]
 }
